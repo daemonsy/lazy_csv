@@ -23,7 +23,7 @@
       });
       results.push(row.join(","));
     }
-    return "data:text/csv;base64;charset=utf-8," + btoa(results.join("\r\n"));
+    return "data:text/csv;base64;charset=utf-8," + btoa(unescape(encodeURIComponent(results.join("\r\n"))));
   }
 
   function parseTextForCSV(text) {
