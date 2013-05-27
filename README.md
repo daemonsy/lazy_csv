@@ -5,13 +5,13 @@ Lazy CSV allows you to generate and download a CSV file from any well-formed HTM
 
 ## Why?
 
-You constructed a swanky table for your users, building filters, authorization logic etc. Of course, shortly later, they want to see the data into their favouritest app in the universe, MS Excel \***gasp**\*
+You constructed a swanky table for your users, building filters, authorization logic etc. Of course, shortly later, they want to see that same data their favouritest app in the universe, MS Excel :scream:
 
 So you toil again, keeping things DRY, producing a new CSV view for download.
 
-But downloading that nice html table you built is almost equivalent to copying it and pasting into Excel (it works, but somehow users just can't highlight rows properly).
+But downloading that nice html table you built is almost equivalent to copying it and pasting into Excel (that works actually, somehow users just can't highlight rows properly).
 
-Lazy CSV is my attempt to stop myself from going through the above and I hope it helps fellow developers.
+Lazy CSV is my attempt to stop myself from going through the above during a hack day. I hope it helps someone else.
 
 ### Some Snake Oil
 * No more mistmatches - The CSV downloaded is what you see on the screen
@@ -38,6 +38,7 @@ include `jquery.lazy_csv.js` and `webtoolkit.base64.js` (for non modern browser 
     </table>
 
 **In your JS code**
+
     // Initialize links that do tableToCSV
     $(".csv-link").tableToCSV();
 
