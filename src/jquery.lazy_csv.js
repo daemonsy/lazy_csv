@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*/
 
 (function( $ ) {
-  encode = window.btoa || Base64.encode;
+  var encode = window.btoa || Base64.encode;
 
   $.extend($.fn, {
     tableToCSV: function() {
