@@ -8,30 +8,39 @@
   </head>
   <body>
     <div class="row">
-      <h1>Lazy CSV Demo</h1>
+      <h2>Lazy CSV Demo</h2>
+      <div class="alert-box secondary">This extension only works with Chrome, Firefox, Opera and IE8+ (with Base64 encoder)</div>
       <a href="#" data-table=".js-csv-table" class="button">Download CSV</a>
       <table class="js-csv-table csv-table">
-        <tr>
-          <td>Buon Giorno</td>
-          <td>Arrivederci</td>
-        </tr>
-        <tr>
-          <td>¡hola</td>
-          <td>adiós</td>
-        </tr>
-        <tr>
-          <td>你好</td>
-          <td>再见</td>
-        </tr>
-        <tr>
-          <td>
-            <p>Multiple Paragraphs</p>
-            <p>In a table cell</p>
-          </td>
-          <td>
-            Hidden Text will be shown => <span class="hidden">This is hidden</span>
-          </td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Greetings</th>
+            <th>Goodbyes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Buon Giorno</td>
+            <td>Arrivederci</td>
+          </tr>
+          <tr>
+            <td>¡hola</td>
+            <td>adiós</td>
+          </tr>
+          <tr>
+            <td>你好</td>
+            <td>再见</td>
+          </tr>
+          <tr>
+            <td>
+              <p>Multiple Paragraphs</p>
+              <p>In a table cell</p>
+            </td>
+            <td>
+              Hidden Text will be shown => <span class="hidden">This is hidden</span>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
