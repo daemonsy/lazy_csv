@@ -1,15 +1,23 @@
 <!DOCTYPE html>
   <head>
       <meta charset="utf-8">
-      <title>Lazy CSV, Get client side CSV</title>
+      <title>Lazy CSV - Render CSV on client side</title>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/foundation.css">
+      <link rel="stylesheet" type="text/css" href="css/tables.css">
   </head>
   <body>
-      <h1>Demo</h1>
-      <a href="#" data-table=".js-csv-table"> Lazy CSV </a>
-      <table class="js-csv-table">
+    <div class="row">
+      <h1>Lazy CSV Demo</h1>
+      <a href="#" data-table=".js-csv-table" class="button">Download CSV</a>
+      <table class="js-csv-table csv-table">
         <tr>
           <td>Buon Giorno</td>
           <td>Arrivederci</td>
+        </tr>
+        <tr>
+          <td>¡hola</td>
+          <td>adiós</td>
         </tr>
         <tr>
           <td>你好</td>
@@ -21,12 +29,13 @@
             <p>In a table cell</p>
           </td>
           <td>
-            Hidden Text => <span style="display:none">This is hidden</span>
+            Hidden Text will be shown => <span style="display:none">This is hidden</span>
           </td>
         </tr>
       </table>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="src/jquery.lazy_csv.js"></script>
-      <script src="js/demo.js"></script>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="src/jquery.lazy_csv.js"></script>
+    <script src="js/demo.js"></script>
   </body>
 </html>

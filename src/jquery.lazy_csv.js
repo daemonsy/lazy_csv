@@ -1,6 +1,6 @@
 /*The MIT License (MIT)
 
-Copyright (c) 2013 Damon Aw
+Copyright (c) 2013 Damon Aw - @daemonsy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,18 +21,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*/
 
 (function( $ ) {
+  encode = window.btoa || Base64.encode;
 
   $.extend($.fn, {
     tableToCSV: function() {
       this.on("click", function(e) {
         target = $(e.currentTarget)
         table = $(target.data("table"));
-        if(table.length > 0) {
-          target.attr("href", readTable(table));
-        }
+        if(table.length > 0) { target.attr("href", readTable(table)); }
       });
     }
-
   });
 
   function readTable(table) {
@@ -45,7 +43,7 @@ THE SOFTWARE.*/
       });
       results.push(csv_row.join(","));
     }
-    return "data:text/csv;base64;charset=utf-8," + btoa(unescape(encodeURIComponent(results.join("\r\n"))));
+    return "data:text/csv;base64;charset=utf-8," + encode(unescape(encodeURIComponent(results.join("\r\n"))));
   }
 
   function parseTextForCSV(text) {
