@@ -58,3 +58,10 @@ Tested on:
 * Firefox
 * Chrome
 * Opera
+
+## Roadmap
+Things deferred to the future that I probably won't end up doing.
+* Smaller custom Base64 encoder (better still, not needing Base64)
+* Solving the render inline issue. Y U NO WORK on all browsers, HTML5?
+* Feature to skip text in cells marked with a selector
+* `tableToCSV()` to accept an options hash for erm, something
