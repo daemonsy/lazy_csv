@@ -1,0 +1,27 @@
+{
+  "name": "lazy_csv",
+  "version": "0.0.5",
+  "homepage": "https://github.com/daemonsy/lazy_csv",
+  "authors": [
+    "Damon Aw <daemonsy@gmail.com>"
+  ],
+  "description": "HTML table to CSV file on the client side",
+  "main": "src/jquery.lazy_csv.js",
+  "keywords": [
+    "CSV",
+    "conversion"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-base64": "~2.1.5",
+    "foundation": "~5.4.7"
+  }
+}

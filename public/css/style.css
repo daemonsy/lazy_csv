@@ -1,0 +1,7 @@
+@import url(./vendor/foundation.css);
+@import url(./vendor/normalize.css);
+.csv-table {
+  width: 100%; }
+
+.hidden {
+  display: none; }
