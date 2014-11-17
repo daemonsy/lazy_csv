@@ -1,12 +1,12 @@
 {
   "name": "lazy_csv",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/daemonsy/lazy_csv",
   "authors": [
     "Damon Aw <daemonsy@gmail.com>"
   ],
   "description": "HTML table to CSV file on the client side",
-  "main": "src/jquery.lazy_csv.js",
+  "main": "./src/js/jquery.lazy_csv.js",
   "keywords": [
     "CSV",
     "conversion"
