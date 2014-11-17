@@ -1,6 +1,6 @@
 {
   "name": "lazy_csv",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "homepage": "https://github.com/daemonsy/lazy_csv",
   "authors": [
     "Damon Aw <daemonsy@gmail.com>"
@@ -16,9 +16,10 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/bower_components",
+    "app",
     "test",
-    "tests"
+    "tests",
+    "public"
   ],
   "dependencies": {
     "js-base64": "~2.1.5",
