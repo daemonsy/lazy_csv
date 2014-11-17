@@ -1,7 +1,0 @@
-Assertions
-
-- Works for accented unicode characters
-- Works for CJK characters
-- Works for empty table boxes
-- Hides specific columns
-- Can be menified without causing errors by most minifiers
